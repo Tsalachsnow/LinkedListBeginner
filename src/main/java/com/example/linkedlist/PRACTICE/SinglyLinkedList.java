@@ -110,4 +110,11 @@ public class SinglyLinkedList {
             size--;
         }
     }
+
+    // deleting the entire singlyLinkedList
+    public void deleteAll(){
+        head = null;
+        tail = null;
+        System.out.println("sLL deleted successfully");
+    }
 }

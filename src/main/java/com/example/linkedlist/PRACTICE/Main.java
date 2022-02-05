@@ -43,5 +43,8 @@ public class Main {
         sLL.transverseSinglyLinkedList();
         sLL.deletionOfNode(2);
         sLL.transverseSinglyLinkedList();
+
+        //deleteAll in the singlyLinkedList
+        sLL.deleteAll();
 }
 }
