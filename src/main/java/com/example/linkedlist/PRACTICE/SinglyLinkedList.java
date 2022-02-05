@@ -1,5 +1,6 @@
 package com.example.linkedlist.PRACTICE;
 
+
 public class SinglyLinkedList {
     public Node head;
     public Node tail;
@@ -41,5 +42,22 @@ public class SinglyLinkedList {
             node.next = nextNode;
         }
         size++;
+    }
+
+    //SinglyLinkedList Transversal
+    public void transverseSinglyLinkedList(){
+        if(head == null){
+            System.out.println("sLL does not exist");
+        }else{
+            Node tempNode = head;
+            for(int i = 0; i<size; i++){
+                System.out.println(tempNode.value);
+                if(i != size - 1){
+                    System.out.println("->");
+                }
+                tempNode = tempNode.next;
+            }
+        }
+        System.out.println("\n");
     }
 }
