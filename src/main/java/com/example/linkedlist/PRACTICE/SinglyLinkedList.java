@@ -60,4 +60,20 @@ public class SinglyLinkedList {
         }
         System.out.println("\n");
     }
+
+    //search for a particular node value
+    public boolean searchNode(int nodeValue){
+        if(head != null){
+            Node tempNode = head;
+            for(int i = 0; i <size; i++){
+                if(tempNode.value == nodeValue){
+                    System.out.println("found the node at location: " +i+"\n");
+                    return true;
+                }
+                tempNode = tempNode.next;
+            }
+        }
+        System.out.println("node not found");
+        return false;
+    }
 }
