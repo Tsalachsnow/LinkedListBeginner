@@ -22,11 +22,20 @@ public class Main {
 
 
         //transverse through a circularSinglyLinkedList
-        CircularSinglyLinkedList csll2 = new CircularSinglyLinkedList();
-        csll2.createCSLL(5);
-        csll2.insertCSLL(4,0);
-        csll2.insertCSLL(6,1);
-        csll2.insertCSLL(7,8);
-        csll2.transverseCSLL();
+//        CircularSinglyLinkedList csll2 = new CircularSinglyLinkedList();
+//        csll2.createCSLL(5);
+//        csll2.insertCSLL(4,0);
+//        csll2.insertCSLL(6,1);
+//        csll2.insertCSLL(7,8);
+//        csll2.transverseCSLL();
+
+        //serching for a node value in a circularSinglyLinkedList
+        CircularSinglyLinkedList csll3 = new CircularSinglyLinkedList();
+        csll3.createCSLL(5);
+        csll3.insertCSLL(4,0);
+        csll3.insertCSLL(6,1);
+        csll3.insertCSLL(7,8);
+        csll3.transverseCSLL();
+        csll3.searchNode(7);
 }
 }
