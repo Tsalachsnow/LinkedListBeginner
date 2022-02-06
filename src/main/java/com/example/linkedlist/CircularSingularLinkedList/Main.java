@@ -39,14 +39,24 @@ public class Main {
 //        csll3.searchNode(7);
 
         //deletion of node at the beginning, the last and at any point
-        CircularSinglyLinkedList csll4 = new CircularSinglyLinkedList();
-        csll4.createCSLL(5);
-        csll4.insertCSLL(4,0);
-        csll4.insertCSLL(6,1);
-        csll4.insertCSLL(7,8);
-        csll4.transverseCSLL();
-        csll4.deletionNode(4);
+//        CircularSinglyLinkedList csll4 = new CircularSinglyLinkedList();
+//        csll4.createCSLL(5);
+//        csll4.insertCSLL(4,0);
+//        csll4.insertCSLL(6,1);
+//        csll4.insertCSLL(7,8);
+//        csll4.transverseCSLL();
+//        csll4.deletionNode(4);
+//        System.out.println("=========");
+//        csll4.transverseCSLL();
+
+        CircularSinglyLinkedList csll5 = new CircularSinglyLinkedList();
+        csll5.createCSLL(5);
+        csll5.insertCSLL(4,0);
+        csll5.insertCSLL(6,1);
+        csll5.insertCSLL(7,8);
+        csll5.transverseCSLL();
+        csll5.deleteAll();
         System.out.println("=========");
-        csll4.transverseCSLL();
+        csll5.transverseCSLL();
 }
 }
