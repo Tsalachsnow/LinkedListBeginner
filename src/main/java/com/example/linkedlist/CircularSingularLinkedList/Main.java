@@ -30,12 +30,23 @@ public class Main {
 //        csll2.transverseCSLL();
 
         //serching for a node value in a circularSinglyLinkedList
-        CircularSinglyLinkedList csll3 = new CircularSinglyLinkedList();
-        csll3.createCSLL(5);
-        csll3.insertCSLL(4,0);
-        csll3.insertCSLL(6,1);
-        csll3.insertCSLL(7,8);
-        csll3.transverseCSLL();
-        csll3.searchNode(7);
+//        CircularSinglyLinkedList csll3 = new CircularSinglyLinkedList();
+//        csll3.createCSLL(5);
+//        csll3.insertCSLL(4,0);
+//        csll3.insertCSLL(6,1);
+//        csll3.insertCSLL(7,8);
+//        csll3.transverseCSLL();
+//        csll3.searchNode(7);
+
+        //deletion of node at the beginning, the last and at any point
+        CircularSinglyLinkedList csll4 = new CircularSinglyLinkedList();
+        csll4.createCSLL(5);
+        csll4.insertCSLL(4,0);
+        csll4.insertCSLL(6,1);
+        csll4.insertCSLL(7,8);
+        csll4.transverseCSLL();
+        csll4.deletionNode(4);
+        System.out.println("=========");
+        csll4.transverseCSLL();
 }
 }

@@ -72,4 +72,40 @@ public class CircularSinglyLinkedList {
         System.out.println("node not found ");
         return false;
     }
+    //deletion of node at the beginning, the last and at any point
+    public void deletionNode(int location){
+        if(head == null){
+            System.out.println("the CSLL does not exist");
+            return;
+        }else if(location == 0){ //deletion from the beginning if it contains more that one node
+            head = head.next;
+            tail.next = head;
+            size--;
+            if(size == 0){ //deletion from the beginning if it contains only one node
+                tail = null;
+                head = null;
+            }
+        }else if(location >= size){ //deletion from the end of a circularSinglyLinkedList
+            Node tempNode = head;
+            for(int i = 0; i<size-1; i++){
+                tempNode = tempNode.next;
+            }
+            if(tempNode == head){ //if it contains only one node
+                head.next = null;
+                tail = head = null;
+                size--;
+                return;
+            }
+            tempNode.next = head; // if it contains more that one node
+            tail = tempNode;
+            size--;
+        }else{ // deletion at any given point
+            Node tempNode = head;
+            for(int i = 0; i < location; i++){
+                tempNode = tempNode.next;
+            }
+            tempNode.next =tempNode.next.next;
+            size--;
+        }
+    }
 }
